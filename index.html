@@ -15,49 +15,35 @@
 
 <body>
     <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <div class="flower-logo">
-                    <img src="flower-logo.png" alt="logo" width="40px">
-                </div>
-            </a>
+        <header class="p-3 bg-dark bg-gradient text-white mb-5">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <div class="flower-logo">
+                        <img src="flower-logo.png" alt="logo" width="40px">
+                    </div>
+                </a>
 
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            </ul>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input type="search" class="form-control form-control-dark" placeholder="Search..."
+                        aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                </div>
+            </div>
         </header>
 
-
-        <!-- <form class="row gy-2 gx-3 align-items-center justify-content-center">
-            <div class="col-auto">
-                <input type="text" class="form-control" id="name" placeholder="Flower Name">
-            </div>
-            <div class="col-auto">
-                <input type="text" class="form-control" id="des" placeholder="Description">
-            </div>
-            <div class="col-auto">
-                <input type="text" class="form-control" id="url" placeholder="URL">
-            </div>
-            <div class="col-auto">
-                <button type="submit" class="btn btn-primary" id="submit" onclick="showData()">Submit</button>
-            </div>
-        </form>
-
-        <table class="table" id="display">
-            <thead>
-                <tr>
-                    <th scope="col">Flower Name</th>
-                    <th scope="col">Description</th>
-                    <th scope="col">URL</th>
-                </tr>
-            </thead>
-        </table> -->
-
         <div class="form">
+            <p>Please fill out this form</p>
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="name" placeholder="Flower Name">
                 <label for="floatingInput">Flower name</label>
@@ -68,35 +54,33 @@
             </div>
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="url" placeholder="URL Link">
-                <label for="floatingInput">Url Link</label>
+                <label for="floatingInput">URL Link</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="price" placeholder="Price">
+                <label for="floatingInput">Price</label>
             </div>
             <div class="col-auto">
-                <button type="submit" class="btn btn-primary" id="submit" onclick="showData()">Submit</button>
+                <button type="submit" class="btn btn-danger" id="submit" onclick="showData()">Submit</button>
             </div>
-        </div>
 
+        </div>
 
         <table class="table" id="display">
             <thead>
                 <tr>
                     <th scope="col">Flower Name</th>
                     <th scope="col">Description</th>
-                    <th scope="col">URL</th>
+                    <th scope="col">URL Link</th>
+                    <th scope="col">Price (฿)</th>
                 </tr>
             </thead>
         </table>
 
-
-
+        <footer class="page-footer bg-dark bg-gradient text-white mt-5">
+            <div class="footer-copyright text-center py-3">© 2020 Copyright: xxx.com</div>
+        </footer>
     </div>
-
-
-
-
-
-
-
-
 
     <!-- Optional JavaScript; choose one of the two! -->
 
